@@ -56,7 +56,7 @@ for i, item in enumerate(ds["train"]):
         break
     
     image = item["image"]
-    # image.save(f"{output_dir}/original_image_{i}.jpg") # 원본 이미지 저장
+    image.save(f"{output_dir}/original_image_{i}.jpg") # 원본 이미지 저장
 
     # numpy형태로 전달한 뒤 다시 pillow로 변경
     image_np = np.array(image)
