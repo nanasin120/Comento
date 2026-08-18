@@ -16,3 +16,13 @@
 - Input: `numpy.ndarray` (Shape: `(H, W, 3)`, dtype: `uint8`, BGR Color)
 
 - Output: `numpy.ndarray` (Shape: `(224, 224)`, dtype: `float32`, Value range: `0.0 ~ 1.0`)
+
+## 전처리 결과 (Result)
+
+| 원본 | 결과 |
+| --- | --- |
+| <img width="384" height="512" alt="original_image_0" src="https://github.com/user-attachments/assets/34774318-ed10-4ff7-b927-56d38254e05c" /> | <img width="224" height="224" alt="preprocessed_image_0" src="https://github.com/user-attachments/assets/76d7f518-3598-4a68-8c34-156c20059915" /> |
+| <img width="512" height="512" alt="original_image_1" src="https://github.com/user-attachments/assets/42a85d29-8940-4706-9395-45d9477ec8d3" /> | <img width="224" height="224" alt="preprocessed_image_1" src="https://github.com/user-attachments/assets/cac47e9e-85f0-46bf-af58-19837cff2d41" /> |
+| <img width="512" height="383" alt="original_image_2" src="https://github.com/user-attachments/assets/105ef0bd-6798-469a-b898-9c449aa73c62" /> | <img width="224" height="224" alt="preprocessed_image_2" src="https://github.com/user-attachments/assets/b60f1e9d-427e-475c-b8fd-cf77113b4a04" /> |
+| <img width="512" height="348" alt="original_image_3" src="https://github.com/user-attachments/assets/2c9931d5-bcc4-4238-9642-ab4490f52945" /> | <img width="224" height="224" alt="preprocessed_image_3" src="https://github.com/user-attachments/assets/44ae299c-a5a5-401e-8132-753be57cf1f3" /> |
+| <img width="512" height="512" alt="original_image_4" src="https://github.com/user-attachments/assets/ab6532f1-fdb3-4daa-8b3c-dc0803935ec6" /> | <img width="224" height="224" alt="preprocessed_image_4" src="https://github.com/user-attachments/assets/f5df294f-0526-4892-94af-b127a5c3646d" /> |
