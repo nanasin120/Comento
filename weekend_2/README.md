@@ -36,4 +36,4 @@
 
 | 원본 이미지 (Input) | Depth Map 결과 (Output 1) | 3D Point Cloud (Output 2) |
 | :---: | :---: | :---: |
-| <img width="300" alt="original_image" src="https://via.placeholder.com/300x200?text=Original+Image" /> | <img width="300" alt="depth_map" src="https://via.placeholder.com/300x200?text=Depth+Map+(JET)" /> | <img width="300" alt="point_cloud" src="https://via.placeholder.com/300x200?text=3D+Point+Cloud" /> |
+| <img width="384" height="512" alt="image" src="https://github.com/user-attachments/assets/ec7e2566-6e7e-4768-839e-e7164a1e159b" /> | <img width="384" height="512" alt="image" src="https://github.com/user-attachments/assets/4ef41c18-6ed7-4ad3-8ec2-4635da534fad" /> | <img width="384" height="512" alt="image" src="https://github.com/user-attachments/assets/bd3be539-b53d-4560-9e6f-6eb9057aeb4d" /> |
