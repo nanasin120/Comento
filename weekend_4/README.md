@@ -25,3 +25,15 @@
 - **데이터셋명:** Open_closed_eyes_and_yawning_labelled (Kaggle)
 - **링크:** [Kaggle Dataset 바로가기](https://www.kaggle.com/datasets/aryansharma8911/open-closed-eyes-and-yawning-labelled/data)
 - **클래스 구성:** `0: closed_eye`, `1: open_eye`, `2: yawning` (약 33,000장 학습셋 활용)
+
+## 환경 구성
+```python
+# 1. 가상환경 생성
+conda create -n eye-morse python=3.10 -y
+
+# 2. 가상환경 활성화
+conda activate eye-morse
+
+# 3. 필수 패키지 설치
+pip install ultralytics opencv-python pytest
+```
