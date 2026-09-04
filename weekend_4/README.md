@@ -51,3 +51,7 @@ python main.py
 # unittest 실행 방법
 python -m pytest
 ```
+
+# 실행 영상
+
+![데모 시연](https://raw.githubusercontent.com/nanasin120/Comento/main/weekend_4/play.gif)
