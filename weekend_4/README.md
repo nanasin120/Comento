@@ -1,4 +1,4 @@
-# 눈 깜빡임 모스부호 인식 인터페이스
+# 눈 깜빡임을 통한 모스부호 인식
 
 웹캠 영상을 실시간으로 분석하여 사용자의 눈 깜빡임 지속 시간을 측정하고, 이를 모스부호로 변환하여 텍스트를 출력하는 컴퓨터 비전 프로젝트입니다.
 
@@ -22,8 +22,10 @@
 ---
 
 ## 사용 데이터셋
-- **데이터셋명:** Open_closed_eyes_and_yawning_labelled (Kaggle)
+- **데이터셋명:** Open_closed_eyes_and_yawning_labelled
+- **작성자 (Author):** AryanSharma8911
 - **링크:** [Kaggle Dataset 바로가기](https://www.kaggle.com/datasets/aryansharma8911/open-closed-eyes-and-yawning-labelled/data)
+- **라이선스:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - **클래스 구성:** `0: closed_eye`, `1: open_eye`, `2: yawning` (약 33,000장 학습셋 활용)
 
 ## 환경 구성
@@ -36,4 +38,15 @@ conda activate eye-morse
 
 # 3. 필수 패키지 설치
 pip install ultralytics opencv-python pytest
+```
+
+## 실행 방법
+```python
+# Comento디렉토리에서 실행
+
+# test_webcam 실행 방법
+python weekend_4/test_webcam.py
+
+# unittest 실행 방법
+pytest weekend_4
 ```
