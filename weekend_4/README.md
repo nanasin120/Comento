@@ -42,11 +42,12 @@ pip install ultralytics opencv-python pytest
 
 ## 실행 방법
 ```python
-# Comento디렉토리에서 실행
+# Comento/weekend_4 디렉토리로 이동
+cd weekend_4
 
 # test_webcam 실행 방법
-python weekend_4/test_webcam.py
+python main.py
 
 # unittest 실행 방법
-pytest weekend_4
+python -m pytest
 ```

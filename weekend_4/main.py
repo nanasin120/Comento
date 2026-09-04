@@ -4,7 +4,7 @@ from core.decoder import MorseDecoder
 
 def main():
     # 모델 로드
-    model = YOLO(r"weekend_4\yolo\weights\best.pt")
+    model = YOLO(r"yolo\weights\best.pt")
 
     # 0번 기본 웹캠 열기
     cap = cv2.VideoCapture(0)
@@ -32,12 +32,15 @@ def main():
         # 좌우 반전
         frame = cv2.flip(frame, 1)
 
+        # YOLO 실행
         results = model(frame, imgsz=640, conf=0.35, verbose=False)[0]
 
+        # closed와 open의 max 신뢰도
         max_closed_conf = 0.0
         max_open_conf = 0.0
 
         for box in results.boxes:
+            # class id와 신뢰도
             cls_id = int(box.cls[0].item())
             conf = float(box.conf[0].item())
 
@@ -60,6 +63,8 @@ def main():
         # 최댓값 비교 and 0.55 이상인지 확인
         is_closed = (max_closed_conf > max_open_conf) and (max_closed_conf >= 0.55)
 
+
+        # 화면 출력물
         state = decoder.update(is_closed)
         if state["event"]:
             print(f"[EVENT] {state['event']} | Current: {state['current_morse']} | Text: {state['decoded_text']}")
